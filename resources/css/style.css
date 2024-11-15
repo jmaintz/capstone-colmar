@@ -1,0 +1,14 @@
+header {
+    height: 64px;
+}
+
+.logo {
+    height: 32px;
+    padding-left: 24px;
+}
+
+.headerbuttons {
+    float: right;
+    gap: 16px;
+    padding-right: 24px;
+}
