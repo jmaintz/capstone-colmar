@@ -1,3 +1,7 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
     height: 64px;
 }
@@ -11,4 +15,34 @@ header {
     float: right;
     gap: 16px;
     padding-right: 24px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.startsection img {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.startsectiontxt {
+   font-size: 20px;
+   padding-right: 20px;
+   color: black;
+   opacity: 0.8;
+}
+
+.startbutton {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: dimgray;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
 }
