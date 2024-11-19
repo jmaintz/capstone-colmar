@@ -9,13 +9,12 @@ header {
 }
 
 .logo {
-    height: 32px;
+    height: 60px;
     padding-left: 24px;
 }
 
 .headerbuttons {
     float: right;
-    gap: 16px;
     padding-right: 24px;
 }
 
@@ -76,6 +75,7 @@ body {
     display: flex;
     padding: 32px;
     gap: 24px;
+    text-align: center;
 }
 
 .main-image {
@@ -92,17 +92,30 @@ body {
 .content {
     flex: 2;
     padding-top: 32px;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    float: left;
+    text-align: center;
 }
 
 .content h1 {
     font-size: 24px;
     margin-bottom: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .content p {
     font-size: 16px;
     color: #555;
     line-height: 1.5;
+    text-align: center;
+}
+
+.copyright {
+    padding-top: 20px;
+    text-align: center;
 }
 
 .sidebar {
@@ -113,14 +126,14 @@ body {
 }
 
 .sidebar-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
 }
 
 .sidebar-item img {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 8px;
 }
@@ -128,20 +141,189 @@ body {
 .sidebar-item h2 {
     font-size: 18px;
     margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
 }
 
 .sidebar-item p {
     font-size: 14px;
     color: #555;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 
 .sidebar-item a {
     font-size: 14px;
     color: #1a73e8;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    text-align: end;
 }
 
 .sidebar-item a:hover {
     text-decoration: underline;
 }
 
+/*third row*/
+
+.header3 {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: bolder;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding: 72px;
+    background-color: lightgray;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    padding: 16px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 16px 0 8px 0;
+    text-align: center;
+}
+
+.category {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+    text-align: center;
+}
+
+.content p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #444;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Last row*/
+
+.container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 32px;
+}
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.video-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.text-section h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.text-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    padding-bottom: 32px;
+}
+
+.side-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card2 {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.card-image {
+    width: 35%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+/*footer*/
+
+.footer {
+    border-top: 2px solid lightgray;
+}
+
+.footerleft {
+    float: left;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footerright {
+    float: right;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
