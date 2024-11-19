@@ -61,24 +61,87 @@ img {
 
 /*second row*/
 
-.secondbigimage img {
-    max-width: 700px;
-    padding: 32px 24px;
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-.textsecondrow {
-    display: flex;
-    margin-left: 140px;
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-.secondrowrightside {
+.container2 {
     display: flex;
-    float: right;
-    justify-content: center;
+    padding: 32px;
+    gap: 24px;
+}
+
+.main-image {
+    flex: 3;
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content {
+    flex: 2;
+    padding-top: 32px;
+}
+
+.content h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.sidebar {
+    display: flex;
     flex-direction: column;
+    gap: 24px;
+    flex: 1.5;
 }
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.sidebar-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sidebar-item h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.sidebar-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.sidebar-item a {
+    font-size: 14px;
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.sidebar-item a:hover {
+    text-decoration: underline;
+}
+
