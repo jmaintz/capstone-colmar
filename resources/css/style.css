@@ -133,8 +133,11 @@ body {
 .sidebar-item img {
     display: flex;
     width: 50%;
-    height: auto;
     border-radius: 8px;
+}
+
+.guest {
+    background-color: lightgray;
 }
 
 .sidebar-item h2 {
